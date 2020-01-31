@@ -30,12 +30,12 @@ class Home extends React.Component {
         { id: 1, cardMedia: "CardMedia1", title:"Des légumes frais pour tous", like:"false", description:"Nous voulons planter un potager dans notre école pour avoir des légumes frais plus souvent ! "},
         { id: 2, cardMedia: "CardMedia2", title:"Construire un terrain de foot", like:"false"},
         { id: 3, cardMedia: "CardMedia3", title:"Manifester pour le climat", like:"false"},
-        { id: 4, cardMedia: "CardMedia1", like:"false"},
-        { id: 5, cardMedia: "CardMedia2", like:"false"},
-        { id: 6, cardMedia: "CardMedia3", like:"false"},
-        { id: 7, cardMedia: "CardMedia1", like:"false"},
-        { id: 8, cardMedia: "CardMedia2", like:"false"},
-        { id: 9 ,cardMedia: "CardMedia3", like:"false"}
+        { id: 4, cardMedia: "CardMedia4", like:"false"},
+        { id: 5, cardMedia: "CardMedia5", like:"false"},
+        { id: 6, cardMedia: "CardMedia6", like:"false"},
+        { id: 7, cardMedia: "CardMedia7", like:"false"},
+        { id: 8, cardMedia: "CardMedia8", like:"false"},
+        { id: 9 ,cardMedia: "CardMedia9", like:"false"}
       ],
       isOpen: false,
       maxWidth: 'xl'

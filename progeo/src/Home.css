@@ -16,3 +16,34 @@
     background-size: cover;
 }
 
+.CardMedia4 {
+    background-image: url('./kideco.jpg');
+    background-size: cover;
+}
+
+.CardMedia5 {
+    background-image: url('./waste.jpg');
+    background-size: cover;
+}
+
+.CardMedia6 {
+    background-image: url('./planter.jpg');
+    background-size: cover;
+}
+
+
+.CardMedia7 {
+    background-image: url('./class.jpg');
+    background-size: cover;
+}
+
+.CardMedia8 {
+    background-image: url('./text.jpg');
+    background-size: cover;
+}
+
+.CardMedia9 {
+    background-image: url('./group.jpg');
+    background-size: cover;
+}
+
