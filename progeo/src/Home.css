@@ -1,0 +1,18 @@
+
+
+
+.CardMedia1 {
+    background-image: url('./potager.jpg');
+    background-size: cover;
+}
+
+.CardMedia2 {
+    background-image: url('./benin.jpg');
+    background-size: cover;
+}
+
+.CardMedia3 {
+    background-image: url('./child.jpg');
+    background-size: cover;
+}
+

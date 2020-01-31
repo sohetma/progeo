@@ -3,6 +3,7 @@ import {Switch, Route} from "react-router-dom";
 import NewProject from './NewProject';
 import logo from './logo.svg';
 import './App.css';
+import Home from './Home'
 
 class App extends React.Component {
   constructor(props) {
@@ -17,6 +18,11 @@ class App extends React.Component {
 
             <Route path="/newProject" render={ () => (
               <NewProject
+              />)}
+            />
+
+            <Route path="/" render={ () => (
+              <Home
               />)}
             />
 
