@@ -1,5 +1,11 @@
 
+.addProject {
+    background-image: url('./plus.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 60px
 
+}
 
 .CardMedia1 {
     background-image: url('./potager.jpg');

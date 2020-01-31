@@ -11,6 +11,8 @@ import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import Slide from '@material-ui/core/Slide';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
+import  { Link }  from 'react-router-dom'
+
 
 const styles = {
     neutral: {
@@ -80,6 +82,18 @@ class Home extends React.Component {
         justify="center"
         direction="row"
         >
+        <Grid 
+            item xs={12} 
+            sm={4} 
+        >
+          <Card>
+           <Link to={"/newProject"}> 
+            <div className="addProject" style={{ position:'relative', opacity: 0.2, height: '220px', margin: 'auto', marginTop: '20px', textDecoration: "none" }}>
+            Créer mon projet
+            </div>
+            </Link>
+          </Card>
+        </Grid>    
 
         {this.state.projects.map((project, index) => (
           <HomeProject
@@ -106,6 +120,7 @@ class Home extends React.Component {
                     objectFit="cover"
                     frameBorder="0"
                     width="100%"
+                    height="320px"
                     image="https://www.youtube.com/embed/OROZXDJFX4Q"
                   >
                   </CardMedia>
