@@ -1,0 +1,186 @@
+.hero-header {
+  height: 100vh;
+  background-color: "#512DA8";
+  overflow: hidden;
+  background-image: url("./img/passion.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0.9;
+}
+
+.button--submit {
+    height: 45px;
+    padding: 8px 20px;
+    position: relative;
+    background: #5264AE;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 300ms ease all;
+    transition: box-shadow 300ms ease-in-out, color 300ms 0 ease-in-out, opacity 300ms ease-in-out;
+  }
+  .button--submit:not(.disabled):not(.success):hover {
+      box-shadow: 0 0 40px 40px rgb(35, 54, 131) inset;
+    }
+
+  .button--submit:focus {
+      outline: 1px solid rgba(white, 0.5);
+    }
+
+  .button--submit.success {
+      cursor: not-allowed;
+  }
+
+  .button--submit__label {
+    display: block;
+    transition: transform 300ms ease-out, opacity 300ms ease-out;
+    color: aliceblue;
+  }
+
+
+  .forgot-password,
+  .forgot-password a {
+    font-size: 13px;
+    color: #7f7d7d;
+  }
+
+  .forgot-password a {
+    color: #167bff;
+  }
+
+
+  .auth-wrapper 		{
+      width:600px;
+      margin: auto;
+      padding:10px 50px 50px;
+      opacity: 0.7;
+    }
+
+  /* form starting stylings ------------------------------- */
+  .auth-inner 			  {
+      position:relative;
+      top: auto;
+      left: 120px;
+      margin-bottom:45px;
+    }
+    .auth-innered			  {
+      position:relative;
+      top: auto;
+      left: -70px;
+      margin-bottom:45px;
+    }
+    .inputForm {
+      background: aliceblue;
+      font-size:18px;
+      padding:10px 10px 10px 5px;
+      display:block;
+      width:300px;
+      border:none;
+      border-bottom:1px solid #757575;
+    }
+    .inputForm:focus 		{ outline:none; }
+
+    /* LABEL ======================================= */
+    .labelForm 				 {
+      color:#999;
+      font-size:18px;
+      font-weight:normal;
+      position:absolute;
+      pointer-events:none;
+      left:5px;
+      top:10px;
+      transition:0.2s ease all;
+      -moz-transition:0.2s ease all;
+      -webkit-transition:0.2s ease all;
+    }
+
+    /* active state */
+    .inputForm:focus ~ label, input:valid ~ label 		{
+      top:-20px;
+      font-size:14px;
+      color: #516694;
+    }
+
+    /* BOTTOM BARS ================================= */
+    .bar 	{ position:relative; display:block; width:300px; }
+    .bar:before, .bar:after 	{
+      content:'';
+      height:2px;
+      width:0;
+      bottom:1px;
+      position:absolute;
+      background:#5264AE;
+      transition:0.2s ease all;
+      -moz-transition:0.2s ease all;
+      -webkit-transition:0.2s ease all;
+    }
+    .bar:before {
+      left:50%;
+    }
+    .bar:after {
+      right:50%;
+    }
+
+    /* active state */
+    .inputForm:focus ~ .bar:before, input:focus ~ .bar:after {
+      width:50%;
+    }
+
+    /* HIGHLIGHTER ================================== */
+    .highlight {
+      position:absolute;
+      height:60%;
+      width:100px;
+      top:25%;
+      left:0;
+      pointer-events:none;
+      opacity:0.5;
+    }
+
+    /* active state */
+    .inputForm:focus ~ .highlight {
+      -webkit-animation:inputHighlighter 0.3s ease;
+      -moz-animation:inputHighlighter 0.3s ease;
+      animation:inputHighlighter 0.3s ease;
+    }
+
+    .SignIn-image{
+      display: flex;
+      flex-direction: row;
+    }
+
+    /* ANIMATIONS ================ */
+    @-webkit-keyframes inputHighlighter {
+        from { background:#5264AE; }
+      to 	{ width:0; background:transparent; }
+    }
+    @-moz-keyframes inputHighlighter {
+        from { background:#5264AE; }
+      to 	{ width:0; background:transparent; }
+    }
+    @keyframes inputHighlighter {
+        from { background:#5264AE; }
+      to 	{ width:0; background:transparent; }
+    }
+
+
+  /*
+  * Smartphone
+  */
+  @media only screen and (max-width: 600px) {
+    .inputForm:focus ~ label, input:valid ~ label{
+      top:-5px;
+    }
+    .SignIn{
+      display: none;
+    }
+    .auth-wrapper{
+      margin-top: 100px;
+    }
+
+  }
